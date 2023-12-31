@@ -1,0 +1,243 @@
+* {
+  border: 0;
+  margin: 0;
+}
+
+.header {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-image: url(../media/header/header.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+.header .nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: rgba(10, 0, 0, 0.372);
+  box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+}
+.header .nav .left {
+  position: sticky;
+  top: 0;
+  left: 120px;
+  color: white;
+}
+.header .nav .left .goo {
+  font-size: 24px;
+}
+.header .nav .center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.header .nav .center .apout {
+  margin-left: 45px;
+}
+.header .nav .center .package {
+  margin-left: 45px;
+}
+.header .nav .right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  right: 120px;
+  width: 112px;
+  height: 48px;
+}
+.header .nav .right .favorite {
+  width: 36px;
+  height: 36px;
+}
+.header .nav .right .profile {
+  width: 48px;
+  height: 48px;
+}
+.header .bottom {
+  text-align: center;
+}
+.header .bottom h1 {
+  max-width: 700px;
+  color: #fff;
+  font-size: 75px;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 40px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+.header .bottom p {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 500px;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header .bottom button {
+  border-radius: 10px;
+  background: #00A651;
+  width: 214px;
+  height: 60px;
+  margin-top: 38px;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+.section2 {
+  height: 180px;
+  color: #000;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 180px;
+  box-shadow: 0px -30px 52px 30px rgba(253, 250, 250, 0.845);
+}
+
+.section3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 130px;
+}
+.section3 .card {
+  min-width: 230px;
+  max-width: 230px;
+  height: 155px;
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0px 40px 0px 40px;
+}
+.section3 .card:hover {
+  background: #F9F9F9;
+}
+.section3 .card img {
+  margin: 10px 0 10px 0;
+}
+.section3 .card p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.section3 .ticket img {
+  width: 46px;
+  height: 27.259px;
+}
+.section3 .hotel img {
+  width: 42px;
+  height: 42px;
+}
+.section3 .plane img {
+  width: 38px;
+  height: 38px;
+}
+
+.section4 {
+  height: 580px;
+  background: rgba(0, 88, 83, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-items: center;
+  padding: 30px 0;
+}
+.section4 h2 {
+  width: 450px;
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+.section4 p {
+  width: 450px;
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  bottom: 50px;
+}
+.section4 .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+.section4 .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-items: center;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 200px;
+  max-height: 200px;
+  border-radius: 15px;
+  background: #FFF;
+  margin: 10px;
+  position: relative;
+}
+.section4 .cards .card:hover {
+  background: #F9F9F9;
+}
+.section4 .cards .card img {
+  position: relative;
+  top: 10px;
+}
+.section4 .cards .card h3 {
+  position: relative;
+  top: 10px;
+}
+.section4 .cards .card p {
+  position: relative;
+  top: -5px;
+}/*# sourceMappingURL=main.css.map */
