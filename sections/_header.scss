@@ -13,6 +13,7 @@
     @include flexCenterRwo();
     justify-content: center;
     .nav{
+        z-index: 100;
         @include flexCenterRwo();
         @include sans ;
         // background-color: #eee;
