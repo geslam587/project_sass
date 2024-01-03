@@ -37,6 +37,9 @@
         .center{
             @include flexCenterRwo();
             color: white;
+            P{
+                &:hover{@include hoverButton;}
+            }
             .apout{
                 margin-left:  45px;
             }

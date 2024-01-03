@@ -12,6 +12,7 @@
         box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15);
         margin: 5px;
        &:hover{
+            @include hoverButton;
             background: #F9F9F9;
         }
         @include flexColumnCenter;

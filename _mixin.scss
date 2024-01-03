@@ -14,3 +14,7 @@
     justify-content: space-around;
     align-items: flex-start;
 }
+@mixin hoverButton{
+    cursor: pointer;
+    user-select: none;
+}
