@@ -135,6 +135,10 @@
             border-radius: 10px;
             background: #00A651;
             flex-shrink: 0;
+            &:hover{
+               @include hoverButton;
+               background-color: #666;
+            }
         }
     }
 }

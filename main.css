@@ -1,3 +1,7 @@
+body {
+  overflow-X: hidden;
+}
+
 * {
   border: 0;
   margin: 0;
@@ -493,4 +497,119 @@
   border-radius: 10px;
   background: #00A651;
   flex-shrink: 0;
+}
+.section6 .button button:hover {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: #666;
+}
+
+.section7 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.section7 .top7 {
+  width: 100%;
+  padding: 40px 0 5 0px 0;
+  box-sizing: border-box;
+  line-height: normal;
+  text-align: center;
+}
+.section7 .top7 h2 {
+  color: #000;
+  font-size: 38px;
+}
+.section7 .top7 p {
+  color: #000;
+  font-size: 22px;
+}
+.section7 .bottom7 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.section7 .bottom7 .left {
+  width: 450px;
+}
+.section7 .bottom7 .left .card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 50px 0;
+}
+.section7 .bottom7 .left .card img {
+  width: 60px;
+  height: 60px;
+  margin-right: 25px;
+}
+.section7 .bottom7 .left .card p {
+  color: var(--TEXT-CLR, #5E6282);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.section7 .bottom7 .left .card span {
+  width: 10px;
+  color: var(--TEXT-CLR, #5E6282);
+  font-size: 14px;
+  font-weight: 300;
+}
+.section7 .bottom7 .right {
+  position: relative;
+  width: 340px;
+  height: 370px;
+  border-radius: 26px;
+  background: var(--white, #FFF);
+  box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+.section7 .bottom7 .right .maine {
+  background: var(--white, #FFF);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 340px;
+  height: 370px;
+}
+.section7 .bottom7 .right .maine .greecimg {
+  width: 300px;
+  height: 160px;
+  border-radius: 24px;
+  margin: 20px 20px;
+}
+.section7 .bottom7 .right .maine .greec {
+  color: var(--black, #080809);
+  margin-left: 20px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124.5%; /* 22.41px */
+  letter-spacing: 0.27px;
+}
+.section7 .bottom7 .right .color {
+  z-index: 1;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  opacity: 0.6;
+  background: #59B1E6;
+  filter: blur(75px);
+  position: absolute;
+  top: -20PX;
+  left: 50PX;
 }/*# sourceMappingURL=main.css.map */
