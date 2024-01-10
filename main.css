@@ -775,4 +775,124 @@ body {
   top: 0;
   left: 0;
   background-color: #8A79DF;
+}
+
+.section8 {
+  position: relative;
+  background-color: #ECF1F0;
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  padding: 50px 0;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+.section8 h2 {
+  position: relative;
+  bottom: 20px;
+  color: #000;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.section8 .center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 430px;
+}
+.section8 .center .img1 {
+  position: absolute;
+  left: 0;
+  top: 37px;
+  width: 135px;
+  height: 360px;
+  flex-shrink: 0;
+  border-radius: 0 20px 20px 0;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+}
+.section8 .center .img2 {
+  width: calc(100% - 460px);
+  height: 430px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 20px;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+}
+.section8 .center .img3 {
+  width: 135px;
+  height: 360px;
+  position: absolute;
+  right: 0;
+  top: 37px;
+  flex-shrink: 0;
+  border-radius: 20px 0 0 20px;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+}
+.section8 .center .profile {
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #FFF;
+  box-shadow: 0px 4px 59px 9px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+.section8 .center .profile img {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translate(-50%);
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid #FFF;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat, #C4C4C4;
+}
+.section8 .center .profile p {
+  width: 441px;
+  height: 94px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.section8 .center .profile h3 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  bottom: 10px;
+  left: 0;
+}
+.section8 .Vector {
+  width: 20px;
+  height: 14px;
+  flex-shrink: 0;
+  fill: var(--black, #080809);
+  position: absolute;
+  top: 40%;
+  right: 180px;
 }/*# sourceMappingURL=main.css.map */
