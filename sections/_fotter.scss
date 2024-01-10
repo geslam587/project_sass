@@ -1,0 +1,129 @@
+.fotter{
+    width: 100%;
+    @include flexColumnCenter;
+    align-items: center;
+    box-sizing: border-box;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+    .topf{
+        position: relative;
+        @include flexColumnCenter;
+        justify-content: space-around;
+        align-items: center;
+        width: 1170px;
+        height: 407px;
+        flex-shrink: 0;
+        border-radius:  129px  20px 20px 20px;
+        background: #9FFFEC;
+        h2{
+            width: 70%;
+            color: var(--TEXT-CLR, #5E6282);
+            text-align: center;
+            font-size: 31px;
+            font-weight: 600;
+            line-height: 54px; 
+        }
+        .email{
+            // width: 100%;
+            height: 68px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            text-align: center;
+            @include flexCenterRwo;
+            position: relative;
+            background: var(--white, #FFF);
+            z-index: 1;
+            img{
+                width: 21px;
+                height: 18px;
+                flex-shrink: 0;
+                position: absolute;
+                top: 25px;
+                left: 70px;
+                transform: translate( -50% 0);
+                z-index: 2;
+            }
+            input{
+                width: 421px;
+                height: 60px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                margin-right: 12px;
+                color: var(--TEXT-COLOR, #39425D);
+                font-size: 16px;
+                padding-left: 50px;
+                box-sizing: border-box;
+                position: relative;
+                top: 0;
+                left: 0;
+                z-index: 3;
+                opacity: .7;
+                @include placeholder {
+                    color: cornflowerblue;
+                    opacity: 1;
+                    transition: all .3s ease;
+                    padding-left: 50px;
+                    box-sizing: border-box;
+                    color: var(--TEXT-COLOR, #39425D);
+                    font-family: Montserrat;
+                    font-size: 14px;
+                }
+                
+                border: none;
+                &:focus {
+                    @include placeholder {
+                    opacity: 0;
+                    transition: all .3s ease;
+                    }
+                   z-index: 3;
+                   opacity: 1;
+                }
+                &:focus ~ .em{
+                    z-index: 0;
+                }
+                &:invalid ~ .em {
+                    opacity: 0;
+                }
+                  
+            }
+            
+            button{
+                width: 180px;
+                height: 60px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                background: #00A651;
+                margin-left: 12px;
+                color: var(--white, #FFF);
+                text-align: center;
+                font-family: Open Sans;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+        .whatsapp{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top:  -20px;
+            right: -20px;
+        }
+    }
+    .bottomf{
+        width: 100%;
+        margin-top: 70px;
+        @include flexCenterRwo;
+        justify-content: space-around;
+        align-items: flex-start;
+        
+        
+        .center{
+            @include flexCenterRwo;
+
+        }
+    }
+}
