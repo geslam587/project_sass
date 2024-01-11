@@ -904,7 +904,14 @@ body {
   justify-content: space-around;
   align-items: flex-start;
   align-items: center;
+  padding-bottom: 150px;
   box-sizing: border-box;
+}
+.fotter button {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .fotter img {
   width: 40px;
@@ -1068,6 +1075,10 @@ body {
   position: absolute;
   top: -20px;
   right: -20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .fotter .bottomf {
   width: 100%;
@@ -1080,10 +1091,156 @@ body {
   justify-content: space-around;
   align-items: flex-start;
 }
+.fotter .bottomf .left {
+  width: 200.972px;
+  height: 77px;
+  flex-shrink: 0;
+}
+.fotter .bottomf .left h4 {
+  color: #000;
+  text-align: start;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24.6px;
+}
+.fotter .bottomf .left h3 {
+  color: #000;
+  text-align: start;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 24.6px;
+  margin-bottom: 15px;
+}
+.fotter .bottomf .left p {
+  width: 200.972px;
+  height: 67.472px;
+  flex-shrink: 0;
+  color: var(--TEXT-CLR, #5E6282);
+  font-family: Open Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16.185px;
+}
 .fotter .bottomf .center {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  width: 500px;
+}
+.fotter .bottomf .center h3 {
+  color: var(--black, #080809);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 124.5%; /* 26.145px */
+  margin-bottom: 55px;
+}
+.fotter .bottomf .center p {
+  color: var(--TEXT-CLR, #5E6282);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.41px;
+  margin-bottom: 25px;
+}
+.fotter .bottomf .right {
+  width: 300px;
+  height: 200px;
+}
+.fotter .bottomf .right .social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+}
+.fotter .bottomf .right .social div {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+.fotter .bottomf .right .social div img {
+  width: 60px;
+  height: 60px;
+}
+.fotter .bottomf .right .social div:nth-child(2) {
+  background-repeat: no-repeat;
+  margin: 0 30px;
+  background-image: url(../media/fotter/Background.jpg);
+  background-position: center;
+}
+.fotter .bottomf .right .social div:nth-child(2) img {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  top: 50%;
+  transform: translatey(-50%);
+}
+.fotter .bottomf .right .discover {
+  margin: 27px 0 20px 0;
+}
+.fotter .bottomf .right .discover p {
+  width: 243.18px;
+  height: 35.142px;
+  flex-shrink: 0;
+  color: var(--TEXT-CLR, #5E6282);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.9px;
+  letter-spacing: 0.1px;
+}
+.fotter .bottomf .right .buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.fotter .bottomf .right .buttons button {
+  width: 150.406px;
+  height: 49.198px;
+  flex-shrink: 0;
+  border-radius: 17.5px;
+  background: black;
+  color: #FFF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+}
+.fotter .bottomf .right .buttons button img {
+  max-width: 28px;
+  min-width: 28px;
+  max-height: 28px;
+  min-height: 28px;
+  flex-shrink: 0;
+}
+.fotter .bottomf .right .buttons button:nth-child(2) {
+  width: 140px;
+  height: 49px;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+.fotter .bottomf .right .buttons button div {
+  flex-shrink: 0;
+  text-align: start;
+}
+.fotter .bottomf .right .buttons button div p {
+  flex-shrink: 0;
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16.185px;
 }/*# sourceMappingURL=main.css.map */

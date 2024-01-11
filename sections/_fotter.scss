@@ -1,7 +1,11 @@
 .fotter{
+    button{
+        @include hoverButton;
+    }
     width: 100%;
     @include flexColumnCenter;
     align-items: center;
+    padding-bottom: 150px;
     box-sizing: border-box;
     img{
         width: 40px;
@@ -111,6 +115,8 @@
             position: absolute;
             top:  -20px;
             right: -20px;
+            @include hoverButton;
+
         }
     }
     .bottomf{
@@ -119,10 +125,142 @@
         @include flexCenterRwo;
         justify-content: space-around;
         align-items: flex-start;
-        
+        .left{
+            width: 200.972px;
+            height: 77px;
+            flex-shrink: 0;
+            h4{
+                color: #000;
+                text-align: start;
+                font-size: 24px;
+                font-weight: 700;
+                line-height:  24.6px ;
+            }
+            h3{
+                color: #000;
+                text-align: start;
+                font-size: 32px;
+                font-weight: 700;   
+                line-height:  24.6px ;
+                margin-bottom: 15px
+            }
+            p{
+                width: 200.972px;
+                height: 67.472px;
+                flex-shrink: 0;
+                color: var(--TEXT-CLR, #5E6282);
+                font-family: Open Sans;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 600;
+                line-height:  16.185px ;
+            }
+        }
         
         .center{
             @include flexCenterRwo;
+            width: 500px;
+            h3{
+                color: var(--black, #080809);
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 124.5%; /* 26.145px */
+                margin-bottom: 55px;
+            }
+            p{
+                color: var(--TEXT-CLR, #5E6282);
+                font-size: 16px;
+                font-weight: 400;
+                line-height:22.41px ;
+                margin-bottom: 25px;
+            }
+        }
+        .right{
+            width: 300px;
+            height: 200px;
+            .social{
+                @include flexCenterRwo;
+                justify-content: flex-start;
+                div{
+                    @include hoverButton;
+                    border-radius: 50%;
+                    text-align: center;
+                    align-items: center;
+                    width: 60px;
+                    height: 60px;
+                    position: relative;
+                    img{
+                        width: 60px;
+                        height: 60px;
+                    }
+                    &:nth-child(2){
+                        background-repeat: no-repeat;
+                        margin:0 30px;
+                        background-image: url(../media/fotter/Background.jpg);
+                        background-position: center;
+                        img{
+                            width: 22px;
+                            height: 22px;
+                            position: relative;
+                            top: 50%;
+                            transform: translatey(-50%);
+                        }
+                    }
+                }
+            }
+            .discover{
+                margin: 27px 0 20px 0;
+                p{
+                    width: 243.18px;
+                    height: 35.142px;
+                    flex-shrink: 0;
+                    color: var(--TEXT-CLR, #5E6282);
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height:  24.9px ;
+                    letter-spacing: 0.1px;
+                }
+            }
+            .buttons{
+                @include flexCenterRwo;
+                // padding: 0 10px ;
+                // box-sizing: border-box;
+                button{
+                    width: 150.406px;
+                    height: 49.198px;
+                    flex-shrink: 0;
+                    border-radius: 17.5px;
+                    background: black;
+                    color: #FFF;
+                    @include flexCenterRwo;
+                    justify-content: flex-start;
+                    img{
+                        max-width: 28px;
+                        min-width: 28px;
+                        max-height: 28px;
+                        min-height: 28px;
+                        flex-shrink: 0;
+                    }
+                    &:nth-child(2){
+                        width: 140px;
+                        height: 49px;
+                        flex-shrink: 0;
+                        margin-left: 10px;
+                    }
+                    div{
+                        flex-shrink: 0;
+                        text-align: start;
+                        p{
+                            flex-shrink: 0;
+                            font-family: Open Sans;
+                            font-size: 10px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height:  16.185px ;
+                        }
+                    }
+                }
+            }
 
         }
     }
